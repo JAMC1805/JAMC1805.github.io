@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      const appearanceStorageKey = 'biblioteca-filosofia-appearance'
+      try {
+        const savedAppearance =
+          window.localStorage.getItem(appearanceStorageKey)
+        document.documentElement.dataset.theme =
+          savedAppearance === 'dark' ? 'dark' : 'light'
+      } catch (error) {
+        document.documentElement.dataset.theme = 'light'
+        document.documentElement.dataset.appearanceStorageError = 'true'
+        console.error('No se pudo recuperar la apariencia guardada.', error)
+      }
+    </script>
+    <meta
+      name="description"
+      content="Rutas del Pensamiento: guías y recursos públicos para Historia de la Filosofía I, II y III."
+    />
+    <title>Rutas del Pensamiento</title>
+    <script type="module" crossorigin src="/assets/index-DfqgL10q.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CSSv7E8i.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
