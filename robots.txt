@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jamc1805.github.io/sitemap.xml
